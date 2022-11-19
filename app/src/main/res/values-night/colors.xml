@@ -7,8 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="dark_green">#155115</color>
-    <color name="modechange">#FF000000</color>
-    <color name="editPencilColor">#116F11</color>
+    <color name="modechange">#FFFFFFFF</color>
+    <color name="editPencilColor">#00D300</color>
 
 </resources>
