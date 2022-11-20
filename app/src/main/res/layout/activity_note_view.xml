@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="20dp">
 
             <TextView
                 android:id="@+id/note_title"
@@ -37,8 +37,9 @@
                 android:ellipsize="end"
                 android:gravity="center_vertical"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="20sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
+                android:layout_marginVertical="10dp"
                 tools:text="This is Note Title but some time it is bigger than think." />
 
             <TextView
@@ -47,39 +48,47 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:gravity="center_vertical"
-                android:textSize="16sp"
+                android:textSize="20sp"
+                android:layout_marginVertical="10dp"
                 tools:text="SubTitle (optional)" />
 
             <TextView
                 android:id="@+id/note_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginVertical="10dp"
                 android:autoLink="all"
                 android:ellipsize="end"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 tools:text="Description" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp">
                 <TextView
                     android:layout_gravity="center_vertical"
                     android:id="@+id/note_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="Date and time" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="Remainder : "
+                    android:textColor="#FFFF0000"/>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/note_reminder_date_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Reminder Date and time"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#FFFF0000"
+                    />
 
             </LinearLayout>
-
-            <TextView
-                android:layout_gravity="center_vertical"
-                android:id="@+id/note_reminder_date_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="Reminder Date and time" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
