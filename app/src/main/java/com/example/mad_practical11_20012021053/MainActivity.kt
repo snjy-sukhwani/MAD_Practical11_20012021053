@@ -141,7 +141,7 @@ class MainActivity : AppCompatActivity() {
 
         // add a button
         builder.setPositiveButton(
-            "Ok"
+            "OK"
         ) { _, _ ->
             val newNote = Note(note)
             newNote.title = binding.noteTitle.text.toString()
